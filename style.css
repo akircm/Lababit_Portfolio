@@ -9,7 +9,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
-    background-color: #302f2f;
+    background-color: #4A4A4A;
     color: #FFFFFF;
 }
 
@@ -78,7 +78,7 @@ header {
 }
 
 .abtcont-large {
-    background-color: #4A4A4A;
+    background-color: #302f2f;
     border-radius: 30px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     padding: 40px;
