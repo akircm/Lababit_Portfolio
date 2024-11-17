@@ -691,7 +691,7 @@ body {
         margin-right: auto;
     }
     
-
+}
 @media (min-width: 430px) and (max-width: 1040px) {
     .hero-section {
         flex-direction: column; 
