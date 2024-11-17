@@ -5,72 +5,200 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rica Lababit | Creative Programmer & Designer</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    
-    <header>
-        <img src="images/logo.jpg" alt="Logo" class="logo">
-        <div class="nav">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#hobbies">Hobbies</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#reviews">Reviews</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="images/logo.jpg" alt="Logo" class="logo">
         </div>
-            
-    </header>
-
-    <section class="banner">
-    </section>
-
-    <section class="abtcont" id="about">
-        <div class="abtcont-large">
-            <img src="images/meabout.jpg" alt="">
-            <div class="text-content">
-                <h2 id="AbtMe">About Me</h2>
-                <p id="bio">I’m Rica Lababit, I’m a dedicated programmer who focuses on showcasing my creativity and technical skills. I enjoy solving problems and coming up with new ideas to create effective and efficient solutions using the latest technology. My experience covers various programming languages and tools, helping me handle complex tasks with a clear and thoughtful approach. I take pride in turning ideas into working applications and aim to deliver results that go beyond expectations. Whether working alone or with a team, I’m committed to producing high-quality work and pushing the limits of what technology can do. When I’m not programming, you’ll find me playing online games or cooking.</p>
-            </div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+        </ul>
+        <div class="menu-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
         </div>
-    </section>
-    
-    <section class="skills-section" id="skills">
-        <h2>My Skills</h2>
-        <div class="skillsitem">
-            <div class="item">
-                <div class="image-square">
-                    <img src="images/prog.jpg" alt="">
-                </div>
-                <h5>Programming</h5>
-                <p>
-                    I’m skilled in programming with experience in various languages and tools. I focus on writing clean, efficient code to solve problems and develop useful solutions. I enjoy tackling complex challenges and turning ideas into functional applications.
-                </p>
-            </div>
-    
-            <div class="item">
-                <div class="image-square">
-                    <img src="images/webdes.jpg" alt="">
-                </div>
-                <h5>Web Designing</h5>
-                <p>
-                    I design websites that are visually appealing and easy to use. My approach combines technical skills with creativity to create websites that not only look great but also provide a seamless user experience. I pay attention to details to ensure that every design is both attractive and functional.
-                </p>
-            </div>
-    
-            <div class="item">
-                <div class="image-square">
-                    <img src="images/commuimg.jpg" alt="">
-                </div>
-                <h5>Communication</h5>
-                <p>
-                    I work well with others to achieve common goals. Whether collaborating on a project or helping a teammate, I value open communication and cooperation. I believe good teamwork makes the process smoother and leads to better results.
-                </p>
-            </div>
+    </nav>
+</body>
+
+<section class="hero-section">
+    <div class="hero-text">
+        <h1>Hi, there!</h1>
+        <h2><span class="highlight">RICA</span> IS HERE TO BE YOUR ASSISTANCE</h2>
+        <p>I am here ready to help you in making and creating digital products</p>
+    </div>
+    <div class="hero-image">
+        <div class="circle-bg">
+            <img src="images/hero img.jpg" alt="Rica's photo">
         </div>
-    </section>
+    </div>
+    
+</section>
+
+<section class="about-section" id="about">
+    <div class="about-container">
+        <div class="profile-picture">
+            <img src="images/meabout.jpg" alt="Profile Picture">
+        </div>
+        <div class="about-text">
+            <h1>About Me</h1>
+            <p>
+                I'm Rica Lababit, a programmer who loves solving problems and building with the latest tech. 
+                I'm passionate about high-quality work. In my free time, I game and cook.
+            </p>
+        </div>
+        <div class="social-icons">
+            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+</section>
+
+<section class="skills-section" id="skills">
+    <h2>SKILLS</h2>
+    <div class="skills-container">
+      <div class="skill-card">
+        <div class="icon">
+          <img src="images/prog.png" alt="Programming Icon">
+        </div>
+        <h3>Programming</h3>
+        <p>I'm skilled in programming with experience in various languages and tools. I focus on writing clean, efficient code to solve problems and develop useful solutions. I enjoy tackling complex challenges and turning ideas into functional applications.</p>
+      </div>
+      
+      <div class="skill-card">
+        <div class="icon">
+          <img src="images/webdes.png" alt="Web Designing Icon">
+        </div>
+        <h3>Web Designing</h3>
+        <p>I design websites that are visually appealing and easy to use. My approach combines technical skills with creativity to create websites that not only look great but also provide a seamless user experience.</p>
+      </div>
+
+      <div class="skill-card">
+        <div class="icon">
+          <img src="images/comm.png" alt="Communication Icon">
+        </div>
+        <h3>Communication</h3>
+        <p>I work well with others to achieve common goals. Whether collaborating on a project or helping a teammate, I value open communication and cooperation. I believe good teamwork makes the process smoother and leads to better results.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="blog-section" id="blog">
+    <h2>BLOG</h2>
+    <div class="blog-container">
+        <div class="blog-card">
+            <img src="images/college life.jpg" alt="College Life">
+            <h3>College Life</h3>
+            <p>A journey of growth and discovery, both academically and personally.</p>
+        </div>
+        <div class="blog-card">
+            <img src="images/island.jpg" alt="Island Adventure">
+            <h3>Island Adventure</h3>
+            <p>A breathtaking landscapes and vibrant cultures.</p>
+        </div>
+        <div class="blog-card">
+            <img src="images/photog.jpg" alt = "Photography">
+            <h3>Photography</h3>
+            <p>Appreciate the beauty in every detail, preserving memories of these experiences.</p>
+        </div>
+    </div>
+</section>
+
+<section class="hobbies-section" id="hobbies">
+    <h2>HOBBIES</h2>
+    <div class="hobbies">
+      <div class="hobby">
+        <div class="icon">
+            <img src="images/game.png" alt="Video Game Icon">
+            </div>
+        <h3>Video Games</h3>
+        <p>Playing online games allows me to unwind and have fun, offering a break from working while sharpening my problem-solving skills.</p>
+      </div>
+      <div class="hobby">
+        <div class="icon">
+            <img src="images/cooking.png" alt="Cooking Icon">
+        </div>
+        <h3>Cooking</h3>
+        <p>I enjoy cooking because it helps me relax and be creative, while also being a useful life skill.</p>
+      </div>
+      <div class="hobby">
+        <div class="icon">
+            <img src="images/camera.png" alt="Camera Icon">
+        </div>
+        <h3>Astrophotography</h3>
+        <p>I capture the beauty of the night sky, revealing stars and celestial wonders.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="portfolio-section" id="portfolio">
+    <h2>PORTFOLIO</h2>
+    <div class="portfolio-grid">
+      <div class="portfolio-item">
+        <img src="images/codingimg.jpg" alt="Project 1">
+      </div>
+      <div class="portfolio-item">
+        <img src="images/graphicdesimg.jpg" alt="Project 2">
+      </div>
+      <div class="portfolio-item">
+        <img src="images/webdesimg.jpg" alt="Project 3">
+      </div>
+      <div class="portfolio-item">
+        <img src="images/prog 4.jpg" alt="Project 4">
+      </div>
+      <div class="portfolio-item">
+        <img src="images/proj 5.jpg" alt="Project 5">
+      </div>
+      <div class="portfolio-item">
+        <img src="images/proj 6.jpg" alt="Project 6">
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews-section" id="reviews">
+    <h2>REVIEWS</h2>
+    <div class="reviews-container">
+      <button class="nav-button left">&lt;</button>
+      <div class="review-card">
+        <img src="images/sarah.jpg" alt="Sarah M." class="review-image">
+        <h3>Sarah M.</h3>
+        <p>Rica exceeded my expectations on a branding project. Her creative and stylish designs were exactly what I wanted. Communication was clear, and she easily incorporated my feedback. I highly recommend her for graphic design projects!</p>
+      </div>
+      <div class="review-card">
+        <img src="images/mark.jpg" alt="Mark D." class="review-image">
+        <h3>Mark D.</h3>
+        <p>Collaborating with Rica on our web development project was fantastic. Her coding skills and understanding of user experience created a visually stunning and functional site. She was always responsive and professional. I would gladly work with her again!</p>
+      </div>
+      <button class="nav-button right">&gt;</button>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <h2>CONTACT</h2>
+    <div class="contact-container">
+        <div class="contact-email">
+            <p>rcmlbbt@gmail.com</p>
+        </div>
+        <div class="contact-numbers">
+            <p>+63 994 755 8703</p>
+            <p>+63 927 907 8029</p>
+        </div>
+        <div class="contactsocial-icons">
+            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+    <p class="copyright">© 2024 Rica Mae S. Lababit | All Rights Reserved</p>
+</section>
 
 </body>
 </html>
