@@ -649,140 +649,72 @@ body {
 
 
 
-@media (min-width: 0px) and (max-width: 1040px) {
+@media (max-width: 480px) {
     .navbar {
-        position: sticky;
-        top: 0;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
         width: 100%;
-        z-index: 1000;
-        background-color: #696969;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-        padding: 10px;
-        box-sizing: border-box;
+        align-items: center;
     }
-    
-    .logo {
-        height: 40px;
-        width: 40px;
-    }
-    
+
     .nav-links {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        gap: 10px;
         margin-top: 10px;
-        gap: 15px;
         width: 100%;
-    }
-    
-    .nav-links a {
-        font-size: 16px;
-        padding: 10px;
-        margin-bottom: 0;
-        text-align: center;
-        display: block;
-    }
-    
-    .nav-links a:hover {
-        background-color: #696969;
-    }
-    
-    .logo {
-        margin-right: auto;
-    }
-    
-}
-@media (min-width: 0px) and (max-width: 1040px) {
-    .hero-section {
-        flex-direction: column; 
-        padding: 40px 20px; 
-    }
-    .hero-text h1 {
-        font-size: 2.2rem; 
-    }
-    .hero-text h2 {
-        font-size: 1.8rem;
-    }
-    .hero-text p {
-        font-size: 1rem;
-    }
-}
-
-@media (min-width: 0px) and (max-width: 1040px) {
-    .about-section {
-        display: flex;
-        flex-direction: column; 
-        align-items: center; 
-        text-align: center; 
-        padding: 20px; 
-    }
-
-    .about-section h2 {
-        font-size: 2.5rem; 
-        margin-bottom: 15px; 
-    }
-
-
-    .about-section img {
-        width: 80%; 
-        max-width: 300px; 
-        margin: 20px 0; 
-        border-radius: 50%; 
-    }
-
-    .about-section p {
-        font-size: 1.1rem; 
-        margin-bottom: 20px; 
-        width: 80%; 
-        line-height: 1.5;
-    }
-
-    .about-section .icons {
-        display: flex;
         justify-content: center;
-        gap: 20px; 
-        margin-top: 20px; 
+        flex-wrap: wrap;
     }
 
-    .about-section .icon {
-        font-size: 2rem; 
-        color: #000000; 
-        transition: color 0.3s ease; 
+    .nav-links a {
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+        padding: 8px 16px;
+        display: inline-block;
+        text-align: center;
+        border: 1px solid transparent;
+        transition: background-color 0.3s ease;
+        flex: 1;
+        max-width: 90%;
     }
 
-    .about-section .icon:hover {
-        color: #007BFF; 
-    }
-}
-
-@media (min-width: 0px) and (max-width: 1040px) {
-    .reviews-section h2 {
-        font-size: 2.5rem; 
-        text-align: center; 
-        margin-bottom: 20px; 
+    .nav-links a:hover {
+        background-color: rgba(255, 255, 255, 0.1);
     }
 
-    .reviews-container {
-        display: flex;
-        flex-wrap: wrap; 
-        justify-content: space-center;
-        gap: 20px; 
-        margin-top: 20px; 
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px 0;
     }
 
-    .review-card {
-        width: 100%; 
-        max-width: 480px; 
-        margin-bottom: 20px; 
-        padding: 20px; 
-        border-radius: 8px; 
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-        background-color: #696969; 
-        box-sizing: border-box; 
+    .hero-text {
+        max-width: 100%;
     }
 
-    .review-card:nth-child(odd) {
-        background-color: #696969; 
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-image img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .hero-image::before {
+        width: 150px;
+        height: 150px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .skill-card {
+        max-width: 100%;
     }
 
     .reviews-section .btn,
@@ -791,21 +723,73 @@ body {
     }
 }
 
-
-
-/* General adjustments for all sections to adjust spacing and padding */
-@media (min-width: 1040px) {
-    .skills-container, .blog-container, .hobbies, .reviews-container {
-        gap: 20px;
+/* 480px - 576px */
+@media (min-width: 480px) and (max-width: 576px) {
+    .hero-text h1 {
+        font-size: 2.5rem;
     }
-    .hobby, .review-card, .skill-card {
-        width: 300px;
+
+    .hero-image img {
+        width: 200px;
+        height: 200px;
     }
 }
 
+/* 576px - 768px */
+@media (min-width: 576px) and (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+}
+
+/* 768px - 1040px */
+@media (min-width: 768px) and (max-width: 1040px) {
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    .hero-text h1 {
+        font-size: 2.8rem;
+    }
+
+    .about-container {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .skills-container {
+        gap: 15px;
+    }
+}
+
+/* 1040px - 1440px */
+@media (min-width: 1040px) and (max-width: 1440px) {
+    .hero-section {
+        padding: 40px 30px;
+    }
+
+    .hero-text h1 {
+        font-size: 3rem;
+    }
+}
+
+/* Above 1440px */
 @media (min-width: 1440px) {
-    .skills-container, .blog-container, .hobbies, .reviews-container {
-        gap: 30px;
+    .hero-section {
+        padding: 60px;
+    }
+
+    .hero-text h1 {
+        font-size: 4rem;
+    }
+
+    .hero-text h2 {
+        font-size: 3rem;
     }
 }
 
