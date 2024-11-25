@@ -648,7 +648,7 @@ body {
 }
 
 
-
+/* 0px - 480px */
 @media (max-width: 480px) {
     .navbar {
         display: flex;
